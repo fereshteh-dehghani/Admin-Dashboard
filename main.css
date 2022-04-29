@@ -233,20 +233,20 @@ main .insights>div .middle{
 
 }
 main .insights h3{
-    background: wheat;
     margin: 1rem 0 0.6rem;
     font-size: 1rem;
 }
 main .insights .progress{
     position: relative;
-    width: 92px;
-    height: 92px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
+    margin: auto;
 }
 main .insights svg{
-    width: 7rem;
-    height: 7rem;
-
+    width: 11rem;
+    height: 11rem;
+    padding: 0;
 }
 main .insights svg circle{
     fill: none;
@@ -256,6 +256,7 @@ main .insights svg circle{
     transform: translate(5px,5px);
     stroke-dasharray: 110;
     stroke-dashoffset: 92;
+    
 }
 main .insights .sales svg circle{
    
@@ -277,10 +278,44 @@ main .insights .progress .number{
     top: 0;
     height: 100%;
     width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 main .insights small{
     margin-top: 1.3rem;
     display: block;
+}
+/* ===============Recent Orders============== */
+main .recent-orders{
+    margin-top: 2rem;
+}
+main .recent-orders h2{
+   margin-bottom: 0.8rem; 
+}
+main .recent-orders table{
+    background-color: var(--color-white);
+    width: 100%;
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+main .recent-orders table:hover{
+    box-shadow: none;
+}
+main .recent-orders table td{
+    height: 2.8;
+    border-bottom: 1px solid var(--color-light);
+    color: var(--color-dark-variant);
+}
+main .recent-orders table tr:last-child td{
+    border:none;
+}
+main .recent-orders a{
+    display: block;
+    margin: 1rem auto;
+    color: var(--color-primary);
+    text-align: center;
 }
